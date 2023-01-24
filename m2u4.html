@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREA - Bootstrap</title>  
+    
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="m2u4.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACION -->
+  <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- CAJA FORMULARIO -->
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Acerca de usted</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="button" class="btn btn-primary btn-sm">Enviar</button>
+              <button type="button" class="btn btn-secondary btn-sm">Limpiar</button>
+            </div>
+          </form>
+          
+        </div>
+        
+  <!-- CAJA TABLA -->
+        <div class="col-sm-12 col-md-4 col-lg-4">
+          <h2>Listado de Oficinas</h2>
+          
+          <table class="table table-striped table-dark"> 
+            <thead>
+              <tr>
+                <th>Provincia</th>
+                <th>Código Postal</th>
+                <th>Teléfono</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Santa Fe</td>
+                <td>3000</td>
+                <td>3425123456</td>
+              </tr>
+
+              <tr>
+                <td>Córdoba</td>
+                <td>0356</td>
+                <td>3564123456</td>
+              </tr>
+
+              <tr>
+                <td>Formosa</td>
+                <td>0371</td>
+                <td>3716123456</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
